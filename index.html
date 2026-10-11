@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartBrand Tecnologia | Catálogo</title>
+<meta name="description" content="Catálogo da SmartBrand Tecnologia: ar-condicionado, filtros, manutenção e troca de aparelhos para empresas. Escolha os itens e peça um orçamento.">
+<meta name="theme-color" content="#3a2415">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%236d2434'/%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%23c9a227' stroke-width='2'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='24' fill='%23f0d77f'%3ESB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --couro:#8a5a33; --couro-esc:#3a2415;
+  --papel:#f6efe2; --papel-2:#efe4cf;
+  --bordo:#6d2434; --bordo-esc:#4f1825;
+  --ouro:#c9a227; --ouro-claro:#f0d77f;
+  --tinta:#f6efe2; --texto:#3a2415;
+  --fonte-titulo:"Cormorant Garamond",Georgia,serif;
+  --fonte-corpo:"Jost","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(18px,4.5vw,56px);
+  --topo-h:62px;
+  --grao-couro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .05 0 0 0 0 .02 0 0 0 .9 -.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--topo-h);-webkit-text-size-adjust:100%;background:var(--couro)}
+body{margin:0;font-family:var(--fonte-corpo);font-size:1.0625rem;line-height:1.65;color:var(--tinta);background:var(--couro) var(--grao-couro);overflow-x:clip;min-height:100vh}
+img{max-width:100%;display:block}
+h1,h2,h3,p,ul,figure{margin:0}
+ul{padding:0;list-style:none}
+a{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.pular{position:absolute;left:-999px;top:8px;background:var(--papel);color:var(--texto);padding:8px 12px;border-radius:6px;z-index:100}
+.pular:focus{left:8px}
+:focus-visible{outline:3px solid var(--ouro-claro);outline-offset:2px}
+.wrap{width:min(1180px,100%);margin:0 auto;padding:0 var(--gutter)}
+
+/* topo */
+.topo{position:fixed;inset:0 0 auto 0;z-index:50;background:var(--couro-esc);border-bottom:1px solid var(--ouro)}
+.topo-in{display:flex;align-items:center;justify-content:space-between;gap:14px;height:var(--topo-h);padding:0 var(--gutter)}
+.marca{font:600 1.5rem/1 var(--fonte-titulo);color:var(--papel);text-decoration:none;white-space:nowrap}
+.marca em{color:var(--ouro-claro);font-weight:500}
+.menu{display:flex;align-items:center;gap:clamp(12px,2vw,28px)}
+.menu a.link{font-size:.98rem;font-weight:500;letter-spacing:.03em;color:var(--papel);text-decoration:none;padding:8px 2px;border-bottom:2px solid transparent}
+.menu a.link:hover{color:var(--ouro-claro);border-bottom-color:var(--ouro)}
+.carrinho{display:inline-flex;align-items:center;gap:8px;font:500 .92rem var(--fonte-corpo);padding:8px 14px;border-radius:999px;border:1px solid var(--ouro);background:transparent;color:var(--papel);cursor:pointer;text-decoration:none}
+.carrinho:hover{background:rgba(240,215,127,.12)}
+.carrinho b{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--ouro);color:var(--couro-esc);font-size:.8rem}
+@media (max-width:760px){.menu a.link{display:none}.marca{font-size:1.3rem}}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 22px;border-radius:999px;font:500 1rem var(--fonte-corpo);text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .15s,background .2s}
+.btn:active{transform:translateY(1px)}
+.btn-creme{background:var(--papel);color:var(--bordo);border-color:var(--ouro)}
+.btn-creme:hover{background:#fff}
+.btn-claro{background:transparent;color:var(--papel);border-color:rgba(246,239,226,.6)}
+.btn-claro:hover{border-color:var(--ouro-claro);color:var(--ouro-claro)}
+.btn-bordo{background:var(--bordo);color:var(--papel);border-color:var(--bordo)}
+.btn-bordo:hover{background:var(--bordo-esc)}
+.btn-bordo[disabled]{opacity:.6;cursor:not-allowed}
+.btn-contorno{background:transparent;color:var(--bordo);border-color:var(--bordo)}
+.btn-contorno:hover{background:rgba(109,36,52,.08)}
+
+/* capa */
+.capa{padding:calc(var(--topo-h) + clamp(40px,8vw,96px)) 0 clamp(36px,6vw,72px)}
+.etiqueta{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ouro-claro);font-weight:600}
+.capa h1{font:600 clamp(2.8rem,8vw,5.6rem)/1 var(--fonte-titulo);margin:14px 0 18px;color:var(--papel)}
+.capa h1 em{color:var(--ouro-claro);font-weight:500;display:block}
+.capa p.frase{max-width:34em;font-size:clamp(1.05rem,2vw,1.25rem);color:rgba(246,239,226,.88)}
+.capa .botoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.capa .pontos{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;font-size:.95rem;color:rgba(246,239,226,.8)}
+.capa .pontos li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ouro);margin-right:8px;vertical-align:middle}
+
+/* páginas de papel */
+.secao{padding:clamp(28px,5vw,60px) 0}
+.papel{background:var(--papel);color:var(--texto);border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.35),inset 0 0 0 1px rgba(201,162,39,.35);padding:clamp(22px,4vw,48px)}
+.cab{text-align:center;margin-bottom:clamp(20px,3vw,34px)}
+.eyebrow{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bordo);font-weight:600}
+.cab h2,.titulo-sec{font:600 clamp(2rem,4.6vw,3.2rem)/1.1 var(--fonte-titulo);color:var(--couro-esc);margin-top:6px}
+.cab h2 em{color:var(--bordo);font-weight:500}
+.ornamento{display:block;width:90px;height:2px;margin:14px auto 0;background:linear-gradient(90deg,transparent,var(--ouro),transparent)}
+
+/* ferramentas do catálogo */
+.ferramentas{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:22px}
+.ferramentas input[type=search],.ferramentas select{font:inherit;font-size:1rem;padding:11px 14px;border-radius:10px;border:1px solid rgba(58,36,21,.3);background:#fff;color:var(--texto);min-height:46px}
+.ferramentas input[type=search]{flex:1 1 240px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{font:500 .92rem var(--fonte-corpo);padding:8px 16px;border-radius:999px;border:1px solid rgba(58,36,21,.35);background:transparent;color:var(--couro-esc);cursor:pointer}
+.chip:hover{border-color:var(--bordo);color:var(--bordo)}
+.chip[aria-pressed="true"]{background:var(--bordo);border-color:var(--bordo);color:var(--papel)}
+
+/* grade de produtos */
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{display:flex;flex-direction:column;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(58,36,21,.14);border:1px solid rgba(201,162,39,.35)}
+.card-foto{aspect-ratio:4/3;background:linear-gradient(135deg,var(--bordo),var(--couro-esc));display:grid;place-items:center;overflow:hidden}
+.card-foto img{width:100%;height:100%;object-fit:cover}
+.card-foto span{font:italic 600 3.4rem var(--fonte-titulo);color:var(--ouro-claro);opacity:.85}
+.card-corpo{display:flex;flex-direction:column;gap:8px;padding:16px;flex:1}
+.tag{align-self:flex-start;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--bordo);background:rgba(109,36,52,.09);padding:3px 10px;border-radius:999px}
+.card h3{font:600 1.45rem/1.15 var(--fonte-titulo);color:var(--couro-esc)}
+.desc{font-size:.95rem;line-height:1.5;color:#5a4636;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.mais{align-self:flex-start;background:none;border:0;padding:0;font:500 .9rem var(--fonte-corpo);color:var(--bordo);text-decoration:underline;cursor:pointer}
+.acoes{margin-top:auto;padding-top:8px}
+.acoes .btn{width:100%;min-height:44px;font-size:.96rem;padding:8px 14px}
+.passo{display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid var(--bordo);border-radius:999px;padding:4px}
+.passo button{width:38px;height:38px;border-radius:50%;border:0;background:var(--bordo);color:var(--papel);font-size:1.3rem;line-height:1;cursor:pointer}
+.passo span{font-weight:600;min-width:2ch;text-align:center;color:var(--couro-esc)}
+.vazio{padding:30px 10px;text-align:center;color:#5a4636}
+
+/* como funciona */
+.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.passos li{text-align:center}
+.passos .n{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--bordo);color:var(--ouro-claro);font:600 1.4rem var(--fonte-titulo);box-shadow:0 0 0 3px var(--papel),0 0 0 4px var(--ouro)}
+.passos h3{font:600 1.4rem var(--fonte-titulo);margin:12px 0 4px;color:var(--couro-esc)}
+.passos p{font-size:.97rem;color:#5a4636}
+
+/* pedido */
+.pedido-grade{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px)}
+@media (max-width:860px){.pedido-grade{grid-template-columns:1fr}}
+.sub{font:600 1.5rem var(--fonte-titulo);color:var(--couro-esc);margin-bottom:10px}
+.itens-pedido{display:flex;flex-direction:column;gap:10px}
+.item-p{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:10px;background:#fff;border:1px solid rgba(201,162,39,.4)}
+.item-p b{font-weight:500;color:var(--couro-esc);line-height:1.3}
+.item-p .passo{flex:none}
+.item-p .tirar{background:none;border:0;color:#8a2a2a;font-size:.85rem;text-decoration:underline;cursor:pointer;padding:4px}
+.campo{margin-bottom:14px}
+.campo label{display:block;font-weight:500;margin-bottom:5px;color:var(--couro-esc)}
+.campo input,.campo textarea{width:100%;font:inherit;font-size:1rem;padding:12px 14px;border-radius:10px;border:1px solid rgba(58,36,21,.3);background:#fff;color:var(--texto)}
+.campo textarea{min-height:96px;resize:vertical}
+.campo .erro{color:#9b1c1c;font-size:.88rem;min-height:1.1em;margin-top:3px}
+.armadilha{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.confirmacao{background:#fff;border:1px solid var(--ouro);border-radius:12px;padding:22px;text-align:center}
+.confirmacao h3{font:600 1.8rem var(--fonte-titulo);color:var(--bordo);margin-bottom:8px}
+.confirmacao .botoes{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+.dica{font-size:.9rem;color:#5a4636}
+
+/* janela de detalhes */
+.fundo{position:fixed;inset:0;background:rgba(20,10,4,.7);z-index:80;display:grid;place-items:center;padding:16px}
+.fundo[hidden]{display:none}
+.janela{background:var(--papel);color:var(--texto);border-radius:14px;max-width:560px;width:100%;max-height:90vh;overflow:auto;padding:22px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.janela .foto{aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:linear-gradient(135deg,var(--bordo),var(--couro-esc));margin-bottom:14px}
+.janela .foto img{width:100%;height:100%;object-fit:cover}
+.janela h3{font:600 1.9rem/1.15 var(--fonte-titulo);color:var(--couro-esc);margin:8px 0}
+.janela p.corpo{white-space:pre-line;color:#4a382a}
+.janela .fechar{position:absolute;top:10px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(58,36,21,.85);color:var(--papel);font-size:1.4rem;cursor:pointer}
+.janela .btn{margin-top:16px;width:100%}
+
+/* rodapé */
+.rodape{padding:34px 0 60px;text-align:center;color:rgba(246,239,226,.8);font-size:.92rem}
+.rodape .nome{font:600 1.7rem var(--fonte-titulo);color:var(--papel)}
+.rodape .nome em{color:var(--ouro-claro);font-weight:500}
+.rodape p+p{margin-top:4px}
+.zap-flutuante{position:fixed;right:16px;bottom:16px;z-index:40}
+</style>
+</head>
+<body>
+<a class="pular" href="#catalogo">Pular para o catálogo</a>
+
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="#inicio" aria-label="SmartBrand Tecnologia, voltar ao início">Smart<em>Brand</em></a>
+    <nav class="menu" aria-label="Menu principal">
+      <a class="link" href="#catalogo">Catálogo</a>
+      <a class="link" href="#como">Como funciona</a>
+      <a class="carrinho" href="#pedido" id="botaoCarrinho" aria-label="Ver o meu pedido de orçamento">Meu orçamento <b id="contagem" aria-live="polite">0</b></a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="capa" aria-labelledby="titulo-capa">
+    <div class="wrap">
+      <p class="etiqueta">Catálogo digital · para empresas</p>
+      <h1 id="titulo-capa">SmartBrand <em>Tecnologia</em></h1>
+      <p class="frase">Produtos e serviços para o dia a dia da sua empresa: ar-condicionado, filtros, manutenção e troca de aparelhos. Escolha o que você precisa e peça um orçamento sob medida.</p>
+      <div class="botoes">
+        <a class="btn btn-creme" href="#catalogo">Ver o catálogo</a>
+        <a class="btn btn-claro" href="#como">Como funciona</a>
+      </div>
+      <ul class="pontos">
+        <li>Condições especiais para compras em quantidade</li>
+        <li>Orçamento direto pelo WhatsApp</li>
+        <li>Marcas parceiras</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="catalogo" class="secao" aria-labelledby="titulo-catalogo">
+    <div class="wrap">
+      <div class="papel">
+        <div class="cab">
+          <p class="eyebrow">nossos itens</p>
+          <h2 id="titulo-catalogo">Catálogo de <em>produtos e serviços</em></h2>
+          <span class="ornamento" aria-hidden="true"></span>
+        </div>
+        <div class="ferramentas">
+          <input type="search" id="busca" placeholder="Buscar produto ou serviço" aria-label="Buscar no catálogo">
+          <select id="filtroMarca" aria-label="Filtrar por marca parceira"><option value="">Todas as marcas</option></select>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Filtrar por categoria"></div>
+        <p class="dica" id="aviso" style="margin-bottom:14px">Os valores não aparecem aqui de propósito: cada empresa recebe um orçamento personalizado, com melhores condições para quantidades maiores.</p>
+        <div class="grade" id="grade"></div>
+        <p class="vazio" id="vazio" hidden></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="como" class="secao" aria-labelledby="titulo-como">
+    <div class="wrap">
+      <div class="papel">
+        <div class="cab">
+          <p class="eyebrow">simples e rápido</p>
+          <h2 id="titulo-como">Como <em>funciona</em></h2>
+          <span class="ornamento" aria-hidden="true"></span>
+        </div>
+        <ul class="passos">
+          <li><span class="n">1</span><h3>Escolha os itens</h3><p>Navegue pelo catálogo e clique em "Adicionar ao orçamento" nos produtos e serviços que interessam.</p></li>
+          <li><span class="n">2</span><h3>Informe as quantidades</h3><p>Diga quantas unidades você precisa de cada item e deixe seus dados de contato.</p></li>
+          <li><span class="n">3</span><h3>Receba o orçamento</h3><p>Nossa equipe retorna pelo WhatsApp com os valores e as melhores condições para o seu pedido.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedido" class="secao" aria-labelledby="titulo-pedido">
+    <div class="wrap">
+      <div class="papel">
+        <div class="cab">
+          <p class="eyebrow">pré-pedido sem compromisso</p>
+          <h2 id="titulo-pedido">Peça o seu <em>orçamento</em></h2>
+          <span class="ornamento" aria-hidden="true"></span>
+        </div>
+        <div class="pedido-grade">
+          <div>
+            <h3 class="sub">Itens escolhidos</h3>
+            <div class="itens-pedido" id="itensPedido"></div>
+            <p class="dica" style="margin-top:12px">Ajuste as quantidades aqui. Pedir orçamento não gera nenhuma cobrança.</p>
+          </div>
+          <div>
+            <h3 class="sub">Seus dados</h3>
+            <form id="formPedido" novalidate>
+              <div class="campo"><label for="p-nome">Seu nome</label><input id="p-nome" name="nome" type="text" autocomplete="name" maxlength="200" required><p class="erro" id="p-nome-erro"></p></div>
+              <div class="campo"><label for="p-empresa">Empresa</label><input id="p-empresa" name="empresa" type="text" autocomplete="organization" maxlength="200"><p class="erro" id="p-empresa-erro"></p></div>
+              <div class="campo"><label for="p-tel">WhatsApp (com DDD)</label><input id="p-tel" name="telefone" type="tel" autocomplete="tel" maxlength="40" placeholder="(00) 00000-0000" required><p class="erro" id="p-tel-erro"></p></div>
+              <div class="campo"><label for="p-email">E-mail (opcional)</label><input id="p-email" name="email" type="email" autocomplete="email" maxlength="200"><p class="erro" id="p-email-erro"></p></div>
+              <div class="campo"><label for="p-obs">Observações (opcional)</label><textarea id="p-obs" name="observacao" maxlength="2000" placeholder="Prazo desejado, local de entrega, dúvidas..."></textarea></div>
+              <div class="armadilha" aria-hidden="true"><label for="p-site">Não preencha</label><input id="p-site" name="site" type="text" tabindex="-1" autocomplete="off"></div>
+              <button class="btn btn-bordo" type="submit" id="botaoEnviar" style="width:100%">Enviar pedido de orçamento</button>
+              <p class="erro" id="erroGeral" role="alert" style="margin-top:8px"></p>
+            </form>
+            <div class="confirmacao" id="confirmacao" tabindex="-1" role="status" hidden></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <p class="nome">Smart<em>Brand</em> Tecnologia</p>
+    <p>CNPJ 49.266.274/0001-16</p>
+    <p>© <span id="ano">2026</span> SmartBrand Tecnologia · Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<div class="fundo" id="fundo" hidden>
+  <div class="janela" id="janela" role="dialog" aria-modal="true" aria-labelledby="jan-titulo" tabindex="-1">
+    <button class="fechar" id="fechar" type="button" aria-label="Fechar">×</button>
+    <div class="foto" id="jan-foto"></div>
+    <span class="tag" id="jan-marca"></span>
+    <h3 id="jan-titulo"></h3>
+    <p class="corpo" id="jan-desc"></p>
+    <button class="btn btn-bordo" type="button" id="jan-add">Adicionar ao orçamento</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  /* Ligação com o banco (chave PÚBLICA, pode ficar no site). A chave secreta nunca entra aqui. */
+  var CONFIG = {
+    url: "https://pirfpsdiaajbnriqszvd.supabase.co",
+    chave: "sb_publishable_svsxFhrpfZ8E9zUkdSMx6w_ybcuMakz",
+    /* WhatsApp da loja: só números, com 55 + DDD + número. Ex.: "5545999999999" */
+    whatsapp: "5545988249895"
+  };
+  var CHAVE_LOCAL = "sb_pedido_v1";
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  function h(tag, props) {
+    var e = document.createElement(tag);
+    if (props) Object.keys(props).forEach(function (k) {
+      var v = props[k];
+      if (v == null || v === false) return;
+      if (k === "class") e.className = v;
+      else if (k === "text") e.textContent = v;
+      else if (typeof v === "function" && k.indexOf("on") === 0) e.addEventListener(k.slice(2), v);
+      else e.setAttribute(k, v);
+    });
+    for (var i = 2; i < arguments.length; i++) { var f = arguments[i]; if (f != null && f !== false) e.append(f); }
+    return e;
+  }
+  function rest(caminho, opcoes) {
+    var o = opcoes || {};
+    var cab = { apikey: CONFIG.chave };
+    if (o.corpo !== undefined) { cab["Content-Type"] = "application/json"; cab.Prefer = "return=minimal"; }
+    return fetch(CONFIG.url + "/rest/v1/" + caminho, { method: o.metodo || "GET", headers: cab, body: o.corpo !== undefined ? JSON.stringify(o.corpo) : undefined })
+      .then(function (r) { if (!r.ok) throw new Error("banco " + r.status); return o.corpo !== undefined ? null : r.json(); });
+  }
+  var semAcento = function (s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); };
+
+  var produtos = [];
+  var pedido = {};             /* id -> { nome, qtd } */
+  var estado = { busca: "", categoria: "", marca: "" };
+  try { var salvo = JSON.parse(localStorage.getItem(CHAVE_LOCAL) || "{}"); if (salvo && typeof salvo === "object") pedido = salvo; } catch (e) { pedido = {}; }
+  function guardar() { try { localStorage.setItem(CHAVE_LOCAL, JSON.stringify(pedido)); } catch (e) { /* sem armazenamento */ } }
+  function totalItens() { return Object.keys(pedido).length; }
+
+  /* ---------- quantidade ---------- */
+  function mudarQtd(p, delta) {
+    var atual = pedido[p.id] ? pedido[p.id].qtd : 0;
+    var novo = Math.max(0, Math.min(9999, atual + delta));
+    if (novo === 0) delete pedido[p.id]; else pedido[p.id] = { nome: p.nome, qtd: novo };
+    guardar();
+    atualizarTudo();
+  }
+  function passo(p, qtd) {
+    return h("div", { class: "passo" },
+      h("button", { type: "button", "aria-label": "Diminuir " + p.nome, onclick: function () { mudarQtd(p, -1); } }, "-"),
+      h("span", { "aria-live": "polite", text: String(qtd) }),
+      h("button", { type: "button", "aria-label": "Aumentar " + p.nome, onclick: function () { mudarQtd(p, 1); } }, "+"));
+  }
+  function acoes(p) {
+    var q = pedido[p.id] ? pedido[p.id].qtd : 0;
+    return q ? passo(p, q) : h("button", { type: "button", class: "btn btn-bordo", text: "Adicionar ao orçamento", onclick: function () { mudarQtd(p, 1); } });
+  }
+
+  /* ---------- catálogo ---------- */
+  function foto(p) {
+    var caixa = h("div", { class: "card-foto" });
+    if (p.imagem) {
+      var img = h("img", { src: p.imagem, alt: p.nome, loading: "lazy", decoding: "async" });
+      img.addEventListener("error", function () { caixa.replaceChildren(h("span", { "aria-hidden": "true", text: p.nome.charAt(0).toUpperCase() })); });
+      caixa.append(img);
+    } else caixa.append(h("span", { "aria-hidden": "true", text: p.nome.charAt(0).toUpperCase() }));
+    return caixa;
+  }
+  function filtrados() {
+    var q = semAcento(estado.busca);
+    return produtos.filter(function (p) {
+      if (estado.categoria && (p.categoria || "") !== estado.categoria) return false;
+      if (estado.marca && (p.marca || "") !== estado.marca) return false;
+      return !q || semAcento([p.nome, p.marca, p.categoria, p.descricao].join(" ")).indexOf(q) !== -1;
+    });
+  }
+  function desenharGrade() {
+    var grade = $("#grade"), vazio = $("#vazio");
+    grade.replaceChildren();
+    var lista = filtrados();
+    vazio.hidden = lista.length > 0;
+    if (!lista.length) vazio.textContent = produtos.length ? "Nenhum item encontrado com essa busca. Tente outras palavras ou limpe os filtros." : "Estamos montando o catálogo. Volte em breve ou fale com a gente pelo WhatsApp.";
+    lista.forEach(function (p) {
+      var zonaAcoes = h("div", { class: "acoes", "data-id": p.id });
+      zonaAcoes.append(acoes(p));
+      var maisBt = h("button", { type: "button", class: "mais", text: "Ver detalhes", "aria-label": "Ver detalhes de " + p.nome, onclick: function () { abrirJanela(p); } });
+      grade.append(h("article", { class: "card" }, foto(p),
+        h("div", { class: "card-corpo" }, p.marca ? h("span", { class: "tag", text: p.marca }) : null, h("h3", { text: p.nome }),
+          p.descricao ? h("p", { class: "desc", text: p.descricao }) : null, p.descricao ? maisBt : null, zonaAcoes)));
+    });
+  }
+  function unicos(campo) {
+    var vistos = [];
+    produtos.forEach(function (p) { var v = (p[campo] || "").trim(); if (v && vistos.indexOf(v) === -1) vistos.push(v); });
+    return vistos.sort(function (a, b) { return a.localeCompare(b, "pt-BR"); });
+  }
+  function desenharFiltros() {
+    var chips = $("#chips"); chips.replaceChildren();
+    var cats = unicos("categoria");
+    chips.hidden = cats.length < 2;
+    [""].concat(cats).forEach(function (c) {
+      chips.append(h("button", { type: "button", class: "chip", "aria-pressed": String(estado.categoria === c), text: c || "Todos",
+        onclick: function () { estado.categoria = c; desenharFiltros(); desenharGrade(); } }));
+    });
+    var sel = $("#filtroMarca"), marcas = unicos("marca");
+    sel.hidden = marcas.length < 2;
+    sel.replaceChildren(h("option", { value: "", text: "Todas as marcas" }));
+    marcas.forEach(function (m) { var o = h("option", { value: m, text: m }); if (m === estado.marca) o.selected = true; sel.append(o); });
+  }
+
+  /* ---------- janela de detalhes ---------- */
+  var ultimoFoco = null, produtoAberto = null;
+  function abrirJanela(p) {
+    produtoAberto = p; ultimoFoco = document.activeElement;
+    var f = $("#jan-foto"); f.replaceChildren();
+    f.hidden = !p.imagem;
+    if (p.imagem) f.append(h("img", { src: p.imagem, alt: p.nome }));
+    var tag = $("#jan-marca"); tag.textContent = p.marca || ""; tag.hidden = !p.marca;
+    $("#jan-titulo").textContent = p.nome;
+    $("#jan-desc").textContent = p.descricao || "";
+    $("#fundo").hidden = false;
+    $("#janela").focus();
+    atualizarBotaoJanela();
+  }
+  function atualizarBotaoJanela() {
+    if (!produtoAberto) return;
+    var q = pedido[produtoAberto.id] ? pedido[produtoAberto.id].qtd : 0;
+    $("#jan-add").textContent = q ? "No orçamento: " + q + " (adicionar mais um)" : "Adicionar ao orçamento";
+  }
+  function fecharJanela() { $("#fundo").hidden = true; produtoAberto = null; if (ultimoFoco && ultimoFoco.focus) ultimoFoco.focus(); }
+  $("#fechar").addEventListener("click", fecharJanela);
+  $("#fundo").addEventListener("mousedown", function (e) { if (e.target === $("#fundo")) fecharJanela(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("#fundo").hidden) fecharJanela(); });
+  $("#jan-add").addEventListener("click", function () { if (produtoAberto) mudarQtd(produtoAberto, 1); });
+
+  /* ---------- lista do pedido ---------- */
+  function desenharPedido() {
+    var caixa = $("#itensPedido"); caixa.replaceChildren();
+    var ids = Object.keys(pedido);
+    if (!ids.length) { caixa.append(h("p", { class: "vazio", text: "Você ainda não escolheu nenhum item. Volte ao catálogo e clique em \"Adicionar ao orçamento\"." })); return; }
+    ids.forEach(function (id) {
+      var item = pedido[id], p = { id: id, nome: item.nome };
+      caixa.append(h("div", { class: "item-p" }, h("b", { text: item.nome }), passo(p, item.qtd),
+        h("button", { type: "button", class: "tirar", "aria-label": "Tirar " + item.nome + " do pedido", text: "tirar", onclick: function () { delete pedido[id]; guardar(); atualizarTudo(); } })));
+    });
+  }
+  function atualizarTudo() {
+    $("#contagem").textContent = String(totalItens());
+    document.querySelectorAll(".acoes").forEach(function (z) {
+      var p = produtos.filter(function (x) { return x.id === z.getAttribute("data-id"); })[0];
+      if (p) z.replaceChildren(acoes(p));
+    });
+    desenharPedido();
+    atualizarBotaoJanela();
+  }
+
+  /* ---------- envio do pedido ---------- */
+  function marcar(id, msg) { var e = document.getElementById(id + "-erro"); if (e) e.textContent = msg || ""; return !msg; }
+  function emailOk(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
+  function linkWhats(texto) {
+    var n = String(CONFIG.whatsapp).replace(/\D/g, "");
+    if (n.length < 10) return "";
+    return "https://wa.me/" + n + "?text=" + encodeURIComponent(texto);
+  }
+  function textoWhats(d, itens) {
+    return "Olá! Sou " + d.nome + (d.empresa ? ", da empresa " + d.empresa : "") + ". Gostaria de um orçamento para:\n" +
+      itens.map(function (i) { return "- " + i.quantidade + "x " + i.nome; }).join("\n") +
+      (d.observacao ? "\n\nObservações: " + d.observacao : "") + "\n\nMeu contato: " + d.telefone + (d.email ? " / " + d.email : "");
+  }
+  $("#formPedido").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var f = ev.target.elements, geral = $("#erroGeral"); geral.textContent = "";
+    if (f.site.value) return;   /* campo-armadilha preenchido: é robô, ignora em silêncio */
+    var ids = Object.keys(pedido);
+    if (!ids.length) { geral.textContent = "Escolha pelo menos um item no catálogo antes de enviar."; return; }
+    var d = { nome: f.nome.value.trim(), empresa: f.empresa.value.trim(), telefone: f.telefone.value.trim(), email: f.email.value.trim(), observacao: f.observacao.value.trim() };
+    var okNome = marcar("p-nome", d.nome ? "" : "Digite seu nome.");
+    var okTel = marcar("p-tel", d.telefone.replace(/\D/g, "").length >= 10 ? "" : "Digite o WhatsApp com DDD.");
+    var okEmail = marcar("p-email", !d.email || emailOk(d.email) ? "" : "Digite um e-mail válido.");
+    if (!okNome) { f.nome.focus(); return; }
+    if (!okTel) { f.telefone.focus(); return; }
+    if (!okEmail) { f.email.focus(); return; }
+    var agora = Date.now(), ultimo = 0;
+    try { ultimo = +localStorage.getItem("sb_ultimo_envio") || 0; } catch (e) { /* sem armazenamento */ }
+    if (agora - ultimo < 20000) { geral.textContent = "Aguarde alguns segundos antes de enviar de novo."; return; }
+
+    var itens = ids.map(function (id) { return { produto_id: id, nome: pedido[id].nome, quantidade: pedido[id].qtd }; });
+    var botao = $("#botaoEnviar"); botao.disabled = true; botao.textContent = "Enviando...";
+    var linha = { nome: d.nome.slice(0, 200), empresa: d.empresa.slice(0, 200) || null, telefone: d.telefone.slice(0, 40), email: d.email.slice(0, 200) || null,
+      observacao: d.observacao.slice(0, 3000) || null, itens: itens, status: "novo" };
+    rest("catalogo_pedidos", { metodo: "POST", corpo: linha }).then(function () { return "ok"; }, function () { return "erro"; }).then(function (res) {
+      try { localStorage.setItem("sb_ultimo_envio", String(Date.now())); } catch (e) { /* sem armazenamento */ }
+      var zap = linkWhats(textoWhats(d, itens));
+      var primeiro = d.nome.split(/\s+/)[0];
+      var caixa = $("#confirmacao"); caixa.replaceChildren(
+        h("h3", { text: res === "ok" ? "Pedido recebido, " + primeiro + "!" : "Quase lá, " + primeiro + "!" }),
+        h("p", { text: res === "ok" ? "Recebemos o seu pedido de orçamento. Vamos retornar pelo WhatsApp com os valores e as condições para a sua quantidade." : "Não consegui registrar o pedido agora. Envie pelo WhatsApp, já com a lista pronta, que a gente atende você." }),
+        h("div", { class: "botoes" },
+          zap ? h("a", { class: "btn btn-bordo", href: zap, target: "_blank", rel: "noopener noreferrer", text: res === "ok" ? "Adiantar pelo WhatsApp" : "Enviar pelo WhatsApp" }) : null,
+          h("button", { type: "button", class: "btn btn-contorno", id: "novoPedido", text: "Fazer outro pedido" })));
+      $("#novoPedido").addEventListener("click", function () { caixa.hidden = true; $("#formPedido").hidden = false; });
+      if (res === "ok") { pedido = {}; guardar(); ev.target.reset(); atualizarTudo(); }
+      ev.target.hidden = true; caixa.hidden = false; botao.disabled = false; botao.textContent = "Enviar pedido de orçamento"; caixa.focus();
+    });
+  });
+
+  /* ---------- início ---------- */
+  $("#ano").textContent = new Date().getFullYear();
+  $("#busca").addEventListener("input", function (e) { estado.busca = e.target.value; desenharGrade(); });
+  $("#filtroMarca").addEventListener("change", function (e) { estado.marca = e.target.value; desenharGrade(); });
+  desenharPedido();
+  $("#contagem").textContent = String(totalItens());
+  rest("catalogo_produtos?select=id,nome,marca,categoria,descricao,imagem,ordem&visivel=eq.true&order=ordem.asc,nome.asc").then(function (linhas) {
+    produtos = Array.isArray(linhas) ? linhas : [];
+    /* tira do pedido o que não existe mais no catálogo */
+    Object.keys(pedido).forEach(function (id) { if (!produtos.some(function (p) { return p.id === id; })) delete pedido[id]; });
+    guardar(); desenharFiltros(); desenharGrade(); atualizarTudo();
+  }).catch(function () {
+    $("#vazio").hidden = false;
+    $("#vazio").textContent = "Não consegui carregar o catálogo agora. Recarregue a página em instantes.";
+  });
+})();
+</script>
+</body>
+</html>
