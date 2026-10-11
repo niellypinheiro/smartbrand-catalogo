@@ -243,7 +243,7 @@ a{color:inherit}
               <div class="campo"><label for="p-nome">Seu nome</label><input id="p-nome" name="nome" type="text" autocomplete="name" maxlength="200" required><p class="erro" id="p-nome-erro"></p></div>
               <div class="campo"><label for="p-empresa">Empresa</label><input id="p-empresa" name="empresa" type="text" autocomplete="organization" maxlength="200"><p class="erro" id="p-empresa-erro"></p></div>
               <div class="campo"><label for="p-tel">WhatsApp (com DDD)</label><input id="p-tel" name="telefone" type="tel" autocomplete="tel" maxlength="40" placeholder="(00) 00000-0000" required><p class="erro" id="p-tel-erro"></p></div>
-              <div class="campo"><label for="p-email">E-mail (opcional)</label><input id="p-email" name="email" type="email" autocomplete="email" maxlength="200"><p class="erro" id="p-email-erro"></p></div>
+              <div class="campo"><label for="p-email">E-mail</label><input id="p-email" name="email" type="email" autocomplete="email" maxlength="200" required><p class="erro" id="p-email-erro"></p></div>
               <div class="campo"><label for="p-obs">Observações (opcional)</label><textarea id="p-obs" name="observacao" maxlength="2000" placeholder="Prazo desejado, local de entrega, dúvidas..."></textarea></div>
               <div class="armadilha" aria-hidden="true"><label for="p-site">Não preencha</label><input id="p-site" name="site" type="text" tabindex="-1" autocomplete="off"></div>
               <button class="btn btn-bordo" type="submit" id="botaoEnviar" style="width:100%">Enviar pedido de orçamento</button>
@@ -457,7 +457,7 @@ a{color:inherit}
     var d = { nome: f.nome.value.trim(), empresa: f.empresa.value.trim(), telefone: f.telefone.value.trim(), email: f.email.value.trim(), observacao: f.observacao.value.trim() };
     var okNome = marcar("p-nome", d.nome ? "" : "Digite seu nome.");
     var okTel = marcar("p-tel", d.telefone.replace(/\D/g, "").length >= 10 ? "" : "Digite o WhatsApp com DDD.");
-    var okEmail = marcar("p-email", !d.email || emailOk(d.email) ? "" : "Digite um e-mail válido.");
+    var okEmail = marcar("p-email", emailOk(d.email) ? "" : "Digite um e-mail válido.");
     if (!okNome) { f.nome.focus(); return; }
     if (!okTel) { f.telefone.focus(); return; }
     if (!okEmail) { f.email.focus(); return; }
