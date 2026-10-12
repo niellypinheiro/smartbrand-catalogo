@@ -93,8 +93,9 @@ a{color:inherit}
 /* grade de produtos */
 .grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
 .card{display:flex;flex-direction:column;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(58,36,21,.14);border:1px solid rgba(201,162,39,.35)}
-.card-foto{aspect-ratio:4/3;background:linear-gradient(135deg,var(--bordo),var(--couro-esc));display:grid;place-items:center;overflow:hidden}
-.card-foto img{width:100%;height:100%;object-fit:cover}
+.card-foto{aspect-ratio:1/1;background:linear-gradient(135deg,var(--bordo),var(--couro-esc));display:grid;place-items:center;overflow:hidden}
+.card-foto.tem-foto{background:#fff;border-bottom:1px solid rgba(201,162,39,.3)}
+.card-foto img{width:100%;height:100%;object-fit:contain;padding:10px}
 .card-foto span{font:italic 600 3.4rem var(--fonte-titulo);color:var(--ouro-claro);opacity:.85}
 .card-corpo{display:flex;flex-direction:column;gap:8px;padding:16px;flex:1}
 .tag{align-self:flex-start;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--bordo);background:rgba(109,36,52,.09);padding:3px 10px;border-radius:999px}
@@ -139,8 +140,8 @@ a{color:inherit}
 .fundo{position:fixed;inset:0;background:rgba(20,10,4,.7);z-index:80;display:grid;place-items:center;padding:16px}
 .fundo[hidden]{display:none}
 .janela{background:var(--papel);color:var(--texto);border-radius:14px;max-width:560px;width:100%;max-height:90vh;overflow:auto;padding:22px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.5)}
-.janela .foto{aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:linear-gradient(135deg,var(--bordo),var(--couro-esc));margin-bottom:14px}
-.janela .foto img{width:100%;height:100%;object-fit:cover}
+.janela .foto{aspect-ratio:1/1;max-height:60vh;border-radius:10px;overflow:hidden;background:#fff;border:1px solid rgba(201,162,39,.3);margin:0 auto 14px}
+.janela .foto img{width:100%;height:100%;object-fit:contain;padding:10px}
 .janela h3{font:600 1.9rem/1.15 var(--fonte-titulo);color:var(--couro-esc);margin:8px 0}
 .janela p.corpo{white-space:pre-line;color:#4a382a}
 .janela .fechar{position:absolute;top:10px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(58,36,21,.85);color:var(--papel);font-size:1.4rem;cursor:pointer}
@@ -339,10 +340,10 @@ a{color:inherit}
 
   /* ---------- catálogo ---------- */
   function foto(p) {
-    var caixa = h("div", { class: "card-foto" });
+    var caixa = h("div", { class: "card-foto" + (p.imagem ? " tem-foto" : "") });
     if (p.imagem) {
       var img = h("img", { src: p.imagem, alt: p.nome, loading: "lazy", decoding: "async" });
-      img.addEventListener("error", function () { caixa.replaceChildren(h("span", { "aria-hidden": "true", text: p.nome.charAt(0).toUpperCase() })); });
+      img.addEventListener("error", function () { caixa.className = "card-foto"; caixa.replaceChildren(h("span", { "aria-hidden": "true", text: p.nome.charAt(0).toUpperCase() })); });
       caixa.append(img);
     } else caixa.append(h("span", { "aria-hidden": "true", text: p.nome.charAt(0).toUpperCase() }));
     return caixa;
